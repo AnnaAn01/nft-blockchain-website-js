@@ -192,6 +192,10 @@
 
 /* Hero Section CSS */
 
+.main {
+  background-color: #141414;
+}
+
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -247,5 +251,28 @@
   text-decoration: none;
 }
 
-.main__btn:hover {
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #782605;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+.main__container {
+  text-align: center;
+}
+
+#main__img {
+  height: 425px;
+  width: 400px;
+  border-radius: 20px;
 }
